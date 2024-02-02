@@ -2,21 +2,18 @@ import pyglet
 from pyglet import shapes
 from random import sample
 
-# Function to perform bubble sort and generate animation frames
+# Function Bubble Sort Algorithm
 def bubble_sort_animation_frames(arr):
     frames = []
     n = len(arr)
 
     for i in range(n):
         for j in range(0, n-i-1):
-            # Create a frame for the current state of the array
             frames.append(arr.copy())
 
-            # If the element found is greater than the next element, swap them
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
-    # Create a frame for the final sorted state
     frames.append(arr.copy())
 
     return frames

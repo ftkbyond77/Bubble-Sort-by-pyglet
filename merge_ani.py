@@ -2,6 +2,7 @@ import pyglet
 from pyglet import shapes
 from random import sample
 
+# Function Merge Sort Algorithm
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
