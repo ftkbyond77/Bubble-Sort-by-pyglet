@@ -110,7 +110,7 @@ def update(dt):
         pyglet.app.exit()
 
 # Schedule the update function
-pyglet.clock.schedule_interval(update, 0.5)  # Adjusted speed
+pyglet.clock.schedule_interval(update, 0.2)  # Adjusted speed
 
 # Start the Pyglet event loop
 pyglet.app.run()
